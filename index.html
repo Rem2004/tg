@@ -418,7 +418,7 @@
          <form class="secondblock__form form-scndbclk" id="">
             <div class="form-scndblck__inputs">
                <input class="form-scndbclk__input"  type="text" placeholder="Введите ваше имя и фамилию" id="user_name">
-               <input class="form-scndbclk__input" type="email" placeholder="Введите ваше имя и фамилию" id="user_email">
+               <input class="form-scndbclk__input" type="email" placeholder="Введите ваш email" id="user_email">
                <input class="form-scndbclk__input" type="tel" placeholder="Введите ваш номер" id="user_phone">
             </div>
             <div class="error" id="error"></div>
@@ -454,15 +454,15 @@
          let phone = document.getElementById("user_phone").value;
          let description = document.getElementById("request_description").value;
 
-         if(name.lenght < 5 ){
+         if(name  < 5 ){
             document.getElementById("error").innerText = 'Ошибка в имени';
             return;
          }
-         if(email.lenght < 5 ){
+         if(email  < 5 ){
             document.getElementById("error").innerText = 'Ошибка  в email. Введите корректную эл. почту';
             return;
          }
-         if(phone.lenght < 5 ){
+         if(phone < 5 ){
             document.getElementById("error").innerText = 'Ошибка в телефоне';
             return;
          }
