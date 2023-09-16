@@ -454,19 +454,19 @@
          let phone = document.getElementById("user_phone").value;
          let description = document.getElementById("request_description").value;
 
-         if(name  < 5 ){
+         if(name.length  < 5 ){
             document.getElementById("error").innerText = 'Ошибка в имени';
             return;
          }
-         if(email  < 5 ){
+         if(email.length  < 5 ){
             document.getElementById("error").innerText = 'Ошибка  в email. Введите корректную эл. почту';
             return;
          }
-         if(phone < 5 ){
+         if(phone.length < 5 ){
             document.getElementById("error").innerText = 'Ошибка в телефоне';
             return;
          }
-         if(description < 30 ){
+         if(description.length < 30 ){
             document.getElementById("error").innerText = 'Опишите сырье подробнее';
             return;
          }
